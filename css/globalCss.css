@@ -1,0 +1,317 @@
+/* Css Global de la page*/
+
+* {
+  font-size: 1rem;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+  font-family: "Roboto Mono", sans-serif;
+}
+hr {
+  border: 0.01em solid white;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+}
+/* Bannière */
+.img-fluid {
+  min-width: 100%;
+  height: 15rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+/* Footer */
+
+.allFooter img {
+  margin-left: 0.75rem;
+}
+.allFooter img:hover {
+  opacity: 0.2;
+}
+.likedin {
+  background-color: white;
+  background-size: contain;
+  border-radius: 0.25rem;
+}
+.contact {
+  width: 48px;
+  height: 48px;
+}
+/* Police de texte */
+
+h1 {
+  font-size: 1.3rem;
+  border-bottom: 0.01rem solid whitesmoke;
+  padding: 0 1.5rem 1rem 0;
+  margin: 0.5rem 0 1rem 0;
+}
+.allFooter h6 {
+  font-size: 0.75rem;
+}
+.footer-copyright {
+  font-size: 0.75rem;
+}
+.allFooter a {
+  color: grey;
+}
+.allFooter button {
+  position: relative;
+  bottom: 0.5rem;
+}
+/* Backgrounds */
+
+body {
+  background-color: #262222;
+}
+.container {
+  background-color: #1e1b1b;
+}
+.bg-dark {
+  background-color: #262222 !important;
+  border-bottom: solid white 0.02rem;
+  margin-bottom: 0.2rem;
+}
+/* Home Page
+---------------------------------------*/
+
+.pcWeb {
+  width: 100%;
+  margin-top: 1rem;
+}
+.text-hide img {
+  width: 65px;
+  height: 65px;
+  margin: 1rem;
+}
+.text-hide figcaption {
+  opacity: 0;
+  position: relative;
+  bottom: 3rem;
+  left: 1rem;
+  background-color: black;
+  cursor: pointer;
+}
+.text-hide:hover img {
+  opacity: 0.1;
+}
+
+.text-hide:hover figcaption {
+  opacity: 1;
+}
+.text-hide figcaption.css_text {
+  position: relative;
+  left: 1.75rem;
+}
+
+.introduction {
+  margin-top:25px;
+}
+
+/* Page Blog */
+
+.card-img-top {
+  height: 14.5rem;
+}
+.card-img-top:hover {
+  opacity: 0.4;
+}
+div .card-body {
+  background-color: #262222;
+}
+.card {
+  height: 31rem;
+  width: 100%;
+  margin: 1rem auto;
+}
+/* Page C.V 
+-------------------------------------*/
+.langages {
+  margin: 0 auto;
+  width: 50%;
+}
+.photo {
+  width: 19vw;
+}
+.photo:hover {
+  opacity: 0.5;
+}
+#scrollUp {
+  position: fixed;
+  bottom: 10px;
+  right: -100px;
+  opacity: 0.5;
+}
+.contactIntro {
+  padding-top: 13rem;
+}
+.categories {
+  margin-top: 2.5rem;
+}
+.categories h1 {
+  font-size: 1.5rem;
+}
+.liste li {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.categories li strong {
+  color: yellowgreen;
+}
+.entete {
+  margin-bottom: 2rem 0;
+}
+/* Sidebar ------------------------------*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1e1b1b;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.sidenav.openNav {
+  width: 17.5rem;
+  overflow-x: auto;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+body {
+  transition: margin 0.8s;
+  margin: 0;
+}
+body.openNav {
+  margin-left: 9.75rem;
+  margin-right: -9.75rem;
+}
+#openArrow {
+  position: fixed;
+  top: 3rem;
+  margin-left: -11.8rem;
+  transition-delay: 1s;
+  width: 4rem;
+  height: 30rem;
+  border: solid #1e1b1b 1px;
+  border-radius: 1rem;
+  background-color: white;
+  opacity: 0.2;
+  background-image: url(../pictures/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  background-size: 50%;
+  transition: margin 0.5s;
+  cursor: pointer;
+}
+#openArrow:hover {
+  position: fixed;
+  margin-left: -10rem;
+}
+#closebtn {
+  width: 100%;
+  background-color: firebrick;
+  font-size: 1.5rem;
+  padding-left: 15rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+#closebtn:hover {
+  opacity: 1;
+  font-size: 1.55rem;
+}
+/* Responsive Design 
+-------------------------------------*/
+@media all and (max-width: 1400px) {
+  #openArrow {
+    margin-left: -11rem;
+  }
+  #openArrow:hover {
+    margin-left: -8.25em;
+  }
+}
+@media all and (max-width: 1250px) {
+  #openArrow {
+    margin-left: -10rem;
+  }
+  #openArrow:hover {
+    margin-left: -8.25em;
+  }
+}
+@media all and (max-width: 1024px) {
+  .banniere {
+    display: none;
+  }
+  .pcWeb {
+    height: 50%;
+    width: 50%;
+  }
+  .card {
+    width: auto;
+    margin: 2rem 0 0 0;
+    height: 27rem;
+  }
+  .card-text {
+    font-size: 0.5rem;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .contactIntro {
+    padding-top: 5rem;
+  }
+  #openArrow {
+    margin-left: -8.2rem;
+  }
+  #openArrow:hover {
+    margin-left: -6.5rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .pcWeb {
+    display: none;
+  }
+  .card {
+    width: auto;
+    margin: 1.5rem 0 0 0;
+    height: 25.5rem;
+  }
+  .card-img-top {
+    height: 10rem;
+  }
+  .photo {
+    width: 25vw;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .contactIntro {
+    padding-top: 0;
+    padding-right: 2.25rem;
+  }
+  #openArrow {
+    margin-left: -5.25rem;
+  }
+  #openArrow:hover {
+    margin-left: -4.5rem;
+  }
+}

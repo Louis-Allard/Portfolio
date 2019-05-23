@@ -1,0 +1,184 @@
+body{
+    color:#7980934;
+    background-image: radial-gradient(#F0FFFF,#ADD8E6,#80D0D0);
+    font-family:'Raleway',sherif;
+}
+contact a{
+  color:none;
+  text-decoration:none
+ }
+.progress-bar {
+background:#87CEEB;
+text-align: left;
+height:1rem;
+width: 10rem;
+clear:both;
+position:relative;
+vertical-align:middle;
+float:right;
+top:0.6rem;
+}
+.progress {
+padding: 5px;
+background: #1560BD  ;
+height:1rem;
+}
+.progress span {
+color: #F0F8FF;
+font-size: 1rem;
+margin-left:3rem;
+}
+.competences li div{
+    display: inline-block;
+}
+.competences li {
+    list-style: circle;
+    margin: 0.10rem;
+    margin-top:0.8rem;
+    font-size: 1.5rem;
+}
+.competences{
+    flex-grow: 0.5  ;
+    background-image: linear-gradient(gray,lightgray);
+    border-radius: 0 1em 0 0;
+    padding: 1.25rem;
+    color:#303030;
+    font-weight: 900;
+}
+.competences h1{
+    margin : 2rem ;
+}
+header{
+    text-align: center;
+    background-image: linear-gradient(-45deg,gray,lightgray,hsl(194,93.9%,25.9%));
+    background-size:contain;
+    z-index:3;
+    padding: 1rem;
+    margin: -1rem ;
+}
+header h1{
+    font-size: 5rem;
+    color:darkblue;
+    opacity: 0.8;
+}
+header h2{
+    font-size: 3rem;
+    margin-top: -5rem;
+    color:#1560BD;
+}
+#photocontact{
+    display : flex;
+    flex-direction: row;
+    z-index:5;
+}
+.photo {
+   vertical-align: bottom;
+   position: relative;
+   margin-top: -3rem;
+   flex-grow:1;
+   z-index:2;
+   left: 2rem;
+   bottom:1rem;
+}
+.photo img{
+    border-radius: 10rem 10rem 10rem 10rem;
+    width: 15rem;
+}
+contact{
+  flex-grow: 2;
+  margin-top: 2rem;
+  padding-left: 0.75rem;
+  font-size : 1.50rem;
+}
+#corps{
+    display: flex;
+    flex-direction:row;
+    text-align: left;
+    align-items: center;
+}
+#corps h1{
+    text-transform: uppercase;
+    color:#0000FF;
+    font-size: 2rem;
+    opacity:0.60;
+    font-style: italic;
+}
+.right{
+    flex-grow: 2;
+    text-align: center;
+    padding-left: 1rem;
+    margin-top: -7rem;
+    font-size : 1.3rem;  
+}
+.right li{
+    list-style: none;
+    font-size: 1.3rem;
+    color: darkslategrey;
+}
+.metier{
+    text-transform: capitalize;
+}
+figure{
+    text-align: right;
+}
+.right p{
+    font-size:1.15rem;
+    color:#191970;  
+}
+.right strong{
+    font-weight:900;
+    font-style:italic;
+}
+a{
+    text-decoration:none;
+    color:darkslategrey;
+}
+a:hover{
+    color:darkred;
+    font-weight:bold;
+}
+
+@media all and (max-width : 1024px){
+    #corps{
+        display:block
+    }   
+    .right{
+        margin-top : 1rem;
+    }
+    #photocontact {
+        display:block;
+    }
+    .photo {
+        left: 0rem;
+        text-align: center;
+        bottom:0;
+        margin:1rem auto;
+    }
+}
+
+@media screen and (max-width : 480px){
+    #corps{
+        display:block
+    }   
+    .right{
+        margin-top : 1rem;
+    }
+    #photocontact {
+        display:block;
+    }
+    .photo {
+        left: 0rem;
+        text-align: center;
+        bottom:0.25rem;
+        margin:1rem auto;
+    }
+}
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

@@ -1,0 +1,239 @@
+/* Fond du site */
+body{
+    background-image: url("../Images_v1/Fondsite.jpg");
+    background-repeat:round;
+    background-size: contain;
+    background-attachment:fixed;
+    position: relative;
+    top : 4.5rem;
+    font-family:'Raleway',cursive,serif;
+}
+
+/* Positionnement Grid du site */ 
+
+#page{ 
+    align-items : center;
+    display : grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+header{
+    position : relative;
+    grid-column: col-start 2 / span 10;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width : 100%;
+    background-image : url("../Images_v1/banniere2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header h1{
+    text-align: center;
+    margin : 5rem auto;
+    padding: 0.5rem 1rem;
+    font-size : 3rem;
+    color : #FFFFE0;
+    background-color: hsla(239,84%,31%,0.75);
+}
+nav{
+    width:100%;
+    text-align: center;
+    position : fixed;
+    top :0.5rem ;
+    z-index: 2;
+    background-color: hsla(239,84%,31%,0.75);
+}
+nav ul li {
+    box-sizing: border-box;
+    display: inline-block;
+    list-style : none;
+    font-size: 1.75rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    padding-right :2rem;
+    padding-top : 0.5rem;
+    margin-top :-1rem;
+}
+nav a{
+    box-shadow: 0.3rem 0.3rem black;
+    background-color : hsla(0,0%,19%,0.5);
+    padding: 0 2rem;
+}
+nav a:hover{
+   background-color : hsla(0,0%,19%,1); 
+}
+nav a:active{
+   position: relative;
+   top: 0.25rem;
+}
+.home::before{
+    content:url("../Images_v1/home.png");       
+}
+.cv::before{
+    content:url("../Images_v1/cv.png");
+    margin-right:0.5rem;
+}
+.blog::before{
+    content:url("../Images_v1/blog.png");
+    margin-right:0.5rem;
+}
+.content{
+    grid-column : col-start 2 / span 10;
+    background-color: hsla(0,0%,0%,0.85);
+    padding : 0 1rem;
+    text-align: center;
+}
+/* Footer, mise en page et grille interne */
+footer{
+    display:grid;
+    grid-template-columns: repeat(12, [foot-start] 1fr);
+    background-color: hsla(239,84%,31%,0.75);
+    grid-column: col-start 2 / span 10;
+    padding-bottom: 1rem;
+    color: #FFFFE0;
+}
+footer li{
+    list-style: none;
+    display: block;
+}
+.contactg{
+    grid-column : foot-start 2 / span 3;
+    text-align: left;
+}
+.contactc{
+    grid-column: foot-start 5 / span 3;
+    padding-top: 1rem;
+    text-align: center
+}
+.contactd{
+    grid-column: foot-start 9 / span 3;
+    text-align: left;
+}
+.cred p {
+    font-size : 0.5rem;
+}
+footer p{
+    font-size: 1.25rem;
+}
+/* Style général police, couleurs ect..*/
+hr {
+    width : 65%;
+    text-align: center;
+}
+p,
+h1,
+a{
+    color: white;
+    opacity: 0.95;
+}
+h1 {
+    font-size: 2.50rem;
+}
+p{
+    font-size: 1.75rem;
+}
+.bienvenu p{
+    font-size: 2.25rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:blue;
+}
+
+/* Police */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Média Queries */
+@media only screen and (max-width: 800px) {
+    body{
+        margin-top: 4.5rem;
+    }
+    nav li{
+        margin: 1rem 0;
+    }
+    nav2{
+        position: relative;
+        margin-top : 4rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    body{
+        top: 13.3rem;
+    }
+   
+    nav li{
+        margin: 1rem 0;
+    }
+    nav2{
+        position: relative;
+        margin-top : 6.5rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    footer p{
+        font-size: 0.5rem;
+    }
+    footer a{
+        font-size: 0.5rem;
+    }
+}
+/* Mise en page propre à cette page */
+.bienvenu img{
+    border-radius : 6rem;
+}   
+/*Grille interne au content*/
+.content {
+    display :grid;
+    grid-template-columns: repeat(12, [sub-start] 1fr);
+    grid-row-gap : 1rem;
+}
+.content .bienvenu {
+    grid-column: sub-start 1 / span 12;
+    padding: 0.7rem;
+}
+.bienvenu img {
+  float : left;
+  }
+.content .propos {
+    grid-column : sub-start 2 / span 8 ;
+    display : inline-block;
+}
+.proimg {
+    background-image: url("../Images_v1/Imagepcweb.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    grid-column: sub-start 10 / span 2 ;
+}
+.content .langages {
+    grid-column : sub-start 2 / span 11;
+}
+.content .langages li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.75rem;
+    color: #f9f2dc;
+    opacity: 0.95;
+    padding : 0 5rem;
+}
+.html5::before{
+    content: url("../Images_v1/html5.png");
+}
+.css3::before{
+    content: url("../Images_v1/css3.png");
+}
+
+
