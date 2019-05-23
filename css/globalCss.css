@@ -131,7 +131,7 @@ div .card-body {
   width: 50%;
 }
 .photo {
-  width: 19vw;
+  height: 20vw;
 }
 .photo:hover {
   opacity: 0.5;
@@ -296,7 +296,7 @@ body.openNav {
     height: 10rem;
   }
   .photo {
-    width: 25vw;
+    height: 25vw;
   }
   .sidenav {
     padding-top: 15px;
