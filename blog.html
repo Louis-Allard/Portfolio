@@ -12,10 +12,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="./css/globalCss.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
   </head>
@@ -23,174 +20,119 @@
   <body>
     <div class="container col-md-10 span-1 col-11 span-1">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="./index.html" class="navbar-brand" href="./index.html"
-          >Louis Allard |</a
-        >
+        <a href="./index.html" class="navbar-brand" href="./index.html">Louis Allard |</a>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Accueil</a>
+              <a class="nav-link active" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./cv.html">Mon C.V </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./blog.html"
-                >Blog<span class="sr-only">(current)</span></a
-              >
-            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Mes projets</a>
+            </li> 
           </ul>
         </div>
       </nav>
-
+      <div id="contactsup"></div>
       <header>
-        <img
-          src="./pictures/banniere2.jpg"
-          class="img-fluid banniere"
-          alt="bannière du site"
-        />
+        <img src="./pictures/banniere.jpg" class="img-fluid banniere" alt="bannière du site" />
       </header>
 
       <div class="card mb-3">
-        <a href="./index.html"
+        <a href="https://upbeat-lumiere-02bb22.netlify.com/" target="_blank"
           ><img
             class="card-img-top"
-            src="./pictures/blog4.png"
-            alt="image site v2"
+            src="./pictures/watcha.png"
+            alt="Watcha"
+            title="cliquer pour accéder"
         /></a>
         <div class="card-body">
-          <h5 class="card-title">Portefolio v2</h5>
+          <h5 class="card-title">Watcha</h5>
           <p class="card-text">
-            Mise à jour de mon projet de site "Portfolio"<br />
-            Reprise et nettoyage du code précédent avec les bonnes pratiques
-            apprises durant la formation. Utilisation de bootstrap et de
-            Javascript.<br />
-            En plus de consolider mes bases en HTML et CSS cet mise à jour me
-            permet de m'entrainer à l'utilisation de bootstrap mais également de
-            Javascript et de Jquery. <br />
-            Le design est également plus épuré et parfaitement responsive.
+            Second Projet réalisé au sein de la Wild Code School, de avril à mai 2019. 
+            Watcha, réalisé en équipe de 5 sur une période de deux mois utilise une API permettant de récupérer des élèments de films (BA, synopsis etc.). Il permet de retrouver un film, via un moteur de recherche, par son titre; cliquer sur un acteur renvoi à la liste de ses films; les films peuvent être ajoutés à une liste de favoris, liste que l'on peut retrouver dans le menu "liste".
+          </p>
+          <p>Un lien dans le footer présente succintement l'équipe de developpement.</p>
+          <p class="card-text">
+            Outre l'API, Watcha a été développé en JavaScript et React.JS. 
           </p>
           <p class="card-text">
-            <small class="text-muted">Mise en ligne 10 mai 2019</small>
+            <small class="text-muted"><a href="https://upbeat-lumiere-02bb22.netlify.com/" target="_blank"
+              >Accéder au site</a></small>
           </p>
         </div>
       </div>
 
       <div class="card mb-3">
-        <a href="./blog/v1/index_v1.html" target="_blank"
+        <a href="https://nervous-minsky-7b53b9.netlify.com/" target="_blank"
           ><img
             class="card-img-top"
-            src="./blog/v1/Images_v1/blog3.png"
-            alt="image site v1"
+            src=./pictures/hackathon1.png
+            alt="hakcathon1"
+            title="Cliquer pour accéder"
         /></a>
         <div class="card-body">
-          <h5 class="card-title">Portefolio v1</h5>
+          <h5 class="card-title">Mon premier hackathon</h5>
           <p class="card-text">
-            Mise en ligne de mon projet de site "Portfolio"<br />
-            Réalisation et mise en ligne de ce site, from scratch. Pour la mise
-            en page du site j'utilise un positionnement Grid.<br />
-            Ce projet me permet de confirmer mes connaissances en CSS et HTML
-            tout en me permettant d'avoir un site "vitrine" des compétences
-            acquises et de ma progression.
+            Pour mon premier hackathon, j'ai réalisé ce jeu de carte. Sur une durée de 24h, moi et mon équipe avons obtenir ce résultat, alors que 1 mois auparavant nous n'avions presque jamais touché à une ligne de code.
           </p>
+          <p>Cette application a été réalisé en JavaScript avec React.JS</p>
           <p class="card-text">
-            <small class="text-muted">Mise en ligne 11 juillet 2018</small>
+            <small class="text-muted"><a href="https://nervous-minsky-7b53b9.netlify.com/" target="_blank"
+              >Accéder au site</a></small>
           </p>
         </div>
       </div>
 
       <div class="card mb-3">
-        <a href="./blog/blog2.html" target="_blank"
+        <a href="https://suspicious-keller-31c447.netlify.com/" target="_blank"
           ><img
             class="card-img-top"
-            src="./blog/v1/Images_v1/blog2.png"
+            src="./pictures/wildcircus.png"
             alt="wild circus"
         /></a>
         <div class="card-body">
           <h5 class="card-title">Wild Circus</h5>
           <p class="card-text">
-            Réalisation en HTML et CSS du projet de la Wild Code School<br />
-            Toujours from scratch et à l'aide d'un éditeur de code, je réalise
-            le projet "Wild Circus", épreuve d'admissibilité à la Wild Code
-            School.<br />
-            Le résultat correspond à la maquette initiale, répond aux consignes
-            mais n'est pas responsive.
+            Site internet réalisé afin d'être admis à la Wild Code School de Lille.
+            Ce site est codé en HTML/CSS uniquement.
           </p>
           <p class="card-text">
-            <small class="text-muted">Mise en ligne 08 juillet 2018</small>
+            <small class="text-muted"><a href="https://suspicious-keller-31c447.netlify.com/" target="_blank"
+              >Accéder au site</a></small>
           </p>
         </div>
       </div>
 
-      <div class="card mb-3">
-        <a href="./blog/blog1.html" target="_blank"
-          ><img
-            class="card-img-top"
-            src="./blog/v1/Images_v1/blog1.png"
-            alt="cv_screenshoot"
-        /></a>
-        <div class="card-body">
-          <h5 class="card-title">C.V HTML</h5>
-          <p class="card-text">
-            Après avoir apris les bases d'HTML et de CSS, je réalise mon premier
-            projet, un cv en ligne<br />
-            Pour la mise en page du site j'utilise un positionnement flexbox, le
-            résultat est globalement conforme à la maquette dessinée sur papier
-            et correspond à un CV photo classique.
-            <br />Le CV est réalisé from scratch à l'aide d'un éditeur de code.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Mise en ligne 27 juin 2018</small>
-          </p>
-        </div>
-      </div>
-
+ 
       <footer class="page-footer font-small allFooter">
         <div class="footerContainer">
-          <div
-            class="row text-center d-flex justify-content-center pt-5 mb-3 footer"
-          >
+          <div class="row text-center d-flex justify-content-center pt-5 mb-3 footer">
             <div class="col-md-6 offset-1 py-2">
               <h6 class="text-uppercase font-weight-bold">
-                Développeur Web en formation, suivez l'évolution de mon
-                apprentissage à travers ce site portfolio
+                Développeur Web en formation permanente. N'hésitez pas à me contacter pour parler de vos projets.
               </h6>
             </div>
             <div class="col">
-              <a href="https://github.com/Delien" target="_blank">
-                <img src="pictures/github.ico" alt="mon github"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/nathan-marcy/"
-                target="_blank"
-                ><img
-                  class="likedin"
-                  src="./pictures/likedin.png"
-                  alt="mon LikedIn"
-              /></a>
-              <a href="mailto:contact@nathan-marcy.fr" target="_blank"
-                ><img
-                  class="contact"
-                  src="./pictures/contact.png"
-                  alt="mon LikedIn"
-              /></a>
+              Contact =>
+              <a href="https://github.com/Louis-Allard?tab=repositories" target="_blank"><img src="pictures/github.ico"
+                  alt="mon github" title="Mon GitHub" /></a>
+              <a href="https://www.linkedin.com/in/louis-allard-devweb/" target="_blank"><img class="likedin"
+                  src="./pictures/likedin.png" alt="mon LikedIn" title="Mon LinkeDin" /></a>
+              <a href="mailto:la.devweb@yahoo.com" target="_blank"><img class="contact" src="./pictures/contact.png"
+                  alt="mon Email" title="Email" /></a>
             </div>
           </div>
           <hr class="rgba-white-light" style="margin: 0 10%;" />
         </div>
         <div class="footer-copyright text-center py-2">
-          © 2018 Copyright: Portfolio by Louis Allard
+          console.log('© 2019 Copyright: Portfolio by Louis Allard');
         </div>
       </footer>
       <div id="scrollUp">
