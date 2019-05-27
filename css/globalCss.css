@@ -200,29 +200,7 @@ body.openNav {
   margin-left: 9.75rem;
   margin-right: -9.75rem;
 }
-#openArrow {
-  position: fixed;
-  top: 3rem;
-  margin-left: -11.8rem;
-  transition-delay: 1s;
-  width: 4rem;
-  height: 30rem;
-  border: solid #1e1b1b 1px;
-  border-radius: 1rem;
-  background-color: white;
-  opacity: 0.2;
-  background-image: url(../pictures/arrow.jpg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: right;
-  background-size: 50%;
-  transition: margin 0.5s;
-  cursor: pointer;
-}
-#openArrow:hover {
-  position: fixed;
-  margin-left: -10rem;
-}
+
 #closebtn {
   width: 100%;
   background-color: firebrick;
@@ -237,22 +215,7 @@ body.openNav {
 }
 /* Responsive Design 
 -------------------------------------*/
-@media all and (max-width: 1400px) {
-  #openArrow {
-    margin-left: -11rem;
-  }
-  #openArrow:hover {
-    margin-left: -8.25em;
-  }
-}
-@media all and (max-width: 1250px) {
-  #openArrow {
-    margin-left: -10rem;
-  }
-  #openArrow:hover {
-    margin-left: -8.25em;
-  }
-}
+
 @media all and (max-width: 1024px) {
   .banniere {
     display: none;
@@ -274,12 +237,6 @@ body.openNav {
   }
   .contactIntro {
     padding-top: 5rem;
-  }
-  #openArrow {
-    margin-left: -8.2rem;
-  }
-  #openArrow:hover {
-    margin-left: -6.5rem;
   }
 }
 
@@ -307,11 +264,5 @@ body.openNav {
   .contactIntro {
     padding-top: 0;
     padding-right: 2.25rem;
-  }
-  #openArrow {
-    margin-left: -5.25rem;
-  }
-  #openArrow:hover {
-    margin-left: -4.5rem;
   }
 }
