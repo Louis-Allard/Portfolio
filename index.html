@@ -1,112 +1,194 @@
 <!DOCTYPE html>
 <html lang="Fr">
+  <head>
+    <title>Accueil | Louis Allard</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/globalCss.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141901428-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <title>Accueil | Louis Allard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link href="./css/globalCss.css" rel="stylesheet" type="text/css" />
-  <meta charset="utf-8" />
-</head>
+      gtag("config", "UA-141901428-1");
+    </script>
+  </head>
 
-<body>
-  <div class="container col-md-10 span-1 col-11 span-1">
-    <!--nav et banniere-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a href="./index.html" class="navbar-brand" href="./index.html">Louis Allard |</a>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./cv.html">Mon C.V </a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="./blog.html">Mes projets</a>
-          </li> 
-        </ul>
+  <body>
+    <div class="container col-md-10 span-1 col-11 span-1">
+      <!--nav et banniere-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="./index.html" class="navbar-brand" href="./index.html"
+          >Louis Allard |</a
+        >
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html"
+                >Accueil<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cv.html">Mon C.V </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Mes projets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <img
+          src="./pictures/banniere.jpg"
+          class="img-fluid banniere"
+          alt="bannière du site"
+        />
+      </header>
+
+      <div class="row">
+        <div class="col-9 span-1 introduction">
+          <p>Bienvenue sur mon Portfolio,</p>
+          <p>
+            Après de nombreuses années à travailler dans le monde du web, j'ai
+            intégré la
+            <a
+              href="https://wildcodeschool.fr/formation-developpeur-web-mobile/"
+              target="_blank"
+              title="Site de la Wild"
+            >
+              Wild Code School</a
+            >
+            de Lille afin de me professionnaliser rapidement dans cet univers.
+          </p>
+          <p>
+            Vous trouverez mon cv en cliquant juste ici :
+            <a href="cv.html" target="_parent">
+              <img
+                src="./pictures/cv.jpg"
+                alt="Mon cv"
+                title="Aller voir mon cv"
+              />
+            </a>
+          </p>
+          <p>
+            N'hésitez pas à jeter un coup d'oeil à mon
+            <a
+              href="https://github.com/Louis-Allard?tab=repositories"
+              target="_blank"
+              >GitHub</a
+            >
+            afin de pouvoir suivre mes différents projets de developpement.
+          </p>
+          <p>
+            En bas de cette page, vous trouverez des liens de contact afin de
+            pouvoir me contacter facilement.
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="./pictures/Imagepcweb.png"
+            class="img-fluid pcWeb"
+            alt="icone ordinateur"
+          />
+        </div>
       </div>
-    </nav>
 
-    <header>
-      <img src="./pictures/banniere.jpg" class="img-fluid banniere" alt="bannière du site" />
-    </header>
+      <!--Footer-->
 
-    <div class="row">
-      <div class="col-9 span-1 introduction">
-        <p>Bienvenue sur mon Portfolio,</p>
-        <p>
-          Après de nombreuses années à travailler dans le monde du web, j'ai intégré la
-          <a href="https://wildcodeschool.fr/formation-developpeur-web-mobile/" target="_blank" title="Site de la Wild">
-            Wild Code School</a>
-          de Lille afin de me professionnaliser rapidement dans cet univers.
-        </p>
-        <p>
-          Vous trouverez mon cv en cliquant juste ici :
-          <a href="cv.html" target="_parent"> 
-              <img src="./pictures/cv.jpg" alt="Mon cv" title="Aller voir mon cv"/>
- 
-          </a>
-        </p>
-        <p>
-          N'hésitez pas à jeter un coup d'oeil à mon <a href="https://github.com/Louis-Allard?tab=repositories"
-            target="_blank">GitHub</a> afin de pouvoir suivre mes différents projets de developpement.
-        </p>
-        <p>
-          En bas de cette page, vous trouverez des liens de contact afin de pouvoir me contacter facilement.
-        </p>
-      </div>
-
-      <div class="col">
-        <img src="./pictures/Imagepcweb.png" class="img-fluid pcWeb" alt="icone ordinateur" />
-      </div>
+      <footer class="page-footer font-small allFooter">
+        <div class="footerContainer">
+          <div
+            class="row text-center d-flex justify-content-center pt-5 mb-3 footer"
+          >
+            <div class="col-md-6 offset-1 py-2">
+              <h6 class="text-uppercase font-weight-bold">
+                Développeur Web en formation permanente. N'hésitez pas à me
+                contacter pour parler de vos projets.
+              </h6>
+            </div>
+            <div class="col">
+              Contact =>
+              <a
+                href="https://github.com/Louis-Allard?tab=repositories"
+                target="_blank"
+                ><img
+                  src="pictures/github.ico"
+                  alt="mon github"
+                  title="Mon GitHub"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/louis-allard-devweb/"
+                target="_blank"
+                ><img
+                  class="likedin"
+                  src="./pictures/likedin.png"
+                  alt="mon LikedIn"
+                  title="Mon LinkeDin"
+              /></a>
+              <a href="mailto:la.devweb@yahoo.com" target="_blank"
+                ><img
+                  class="contact"
+                  src="./pictures/contact.png"
+                  alt="mon Email"
+                  title="Email"
+              /></a>
+            </div>
+          </div>
+          <hr class="rgba-white-light" style="margin: 0 10%;" />
+        </div>
+        <div class="footer-copyright text-center py-2">
+          console.log('© 2019 Copyright: Portfolio by Louis Allard');
+        </div>
+      </footer>
     </div>
 
-
-    <!--Footer-->
-
-    <footer class="page-footer font-small allFooter">
-      <div class="footerContainer">
-        <div class="row text-center d-flex justify-content-center pt-5 mb-3 footer">
-          <div class="col-md-6 offset-1 py-2">
-            <h6 class="text-uppercase font-weight-bold">
-              Développeur Web en formation permanente. N'hésitez pas à me contacter pour parler de vos projets.
-            </h6>
-          </div>
-          <div class="col">
-            Contact => 
-            <a href="https://github.com/Louis-Allard?tab=repositories" target="_blank"><img src="pictures/github.ico"
-                alt="mon github" title="Mon GitHub" /></a>
-            <a href="https://www.linkedin.com/in/louis-allard-devweb/" target="_blank"><img class="likedin"
-                src="./pictures/likedin.png" alt="mon LikedIn" title="Mon LinkeDin" /></a>
-            <a href="mailto:la.devweb@yahoo.com" target="_blank"><img class="contact" src="./pictures/contact.png"
-                alt="mon Email" title="Email" /></a>
-          </div>
-        </div>
-        <hr class="rgba-white-light" style="margin: 0 10%;" />
-      </div>
-      <div class="footer-copyright text-center py-2">
-        console.log('© 2019 Copyright: Portfolio by Louis Allard');
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
