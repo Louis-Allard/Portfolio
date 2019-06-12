@@ -12,36 +12,68 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/globalCss.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141901428-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-141901428-1");
+    </script>
   </head>
 
   <body>
     <div class="container col-md-10 span-1 col-11 span-1">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="./index.html" class="navbar-brand" href="./index.html">Louis Allard |</a>
+        <a href="./index.html" class="navbar-brand" href="./index.html"
+          >Louis Allard |</a
+        >
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./index.html"
+                >Accueil<span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./cv.html">Mon C.V </a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link active" href="./blog.html">Mes projets</a>
-            </li> 
+            </li>
           </ul>
         </div>
       </nav>
       <div id="contactsup"></div>
       <header>
-        <img src="./pictures/banniere.jpg" class="img-fluid banniere" alt="bannière du site" />
+        <img
+          src="./pictures/banniere.jpg"
+          class="img-fluid banniere"
+          alt="bannière du site"
+        />
       </header>
 
       <div class="card mb-3">
@@ -55,37 +87,55 @@
         <div class="card-body">
           <h5 class="card-title">Watcha</h5>
           <p class="card-text">
-            Second Projet réalisé au sein de la Wild Code School, de avril à mai 2019. 
-            Watcha, réalisé en équipe de 5 sur une période de deux mois utilise une API permettant de récupérer des élèments de films (BA, synopsis etc.). Il permet de retrouver un film, via un moteur de recherche, par son titre; cliquer sur un acteur renvoi à la liste de ses films; les films peuvent être ajoutés à une liste de favoris, liste que l'on peut retrouver dans le menu "liste".
+            Second Projet réalisé au sein de la Wild Code School, de avril à mai
+            2019. Watcha, réalisé en équipe de 5 sur une période de deux mois
+            utilise une API permettant de récupérer des élèments de films (BA,
+            synopsis etc.). Il permet de retrouver un film, via un moteur de
+            recherche, par son titre; cliquer sur un acteur renvoi à la liste de
+            ses films; les films peuvent être ajoutés à une liste de favoris,
+            liste que l'on peut retrouver dans le menu "liste".
           </p>
-          <p>Un lien dans le footer présente succintement l'équipe de developpement.</p>
-          <p class="card-text">
-            Outre l'API, Watcha a été développé en JavaScript et React.JS. 
+          <p>
+            Un lien dans le footer présente succintement l'équipe de
+            developpement.
           </p>
           <p class="card-text">
-            <small class="text-muted"><a href="https://upbeat-lumiere-02bb22.netlify.com/" target="_blank"
-              >Accéder au site</a></small>
+            Outre l'API, Watcha a été développé en JavaScript et React.JS.
+          </p>
+          <p class="card-text">
+            <small class="text-muted"
+              ><a
+                href="https://upbeat-lumiere-02bb22.netlify.com/"
+                target="_blank"
+                >Accéder au site</a
+              ></small
+            >
           </p>
         </div>
       </div>
 
       <div class="card mb-3">
         <a href="https://nervous-minsky-7b53b9.netlify.com/" target="_blank"
-          ><img
-            class="card-img-top"
-            src=./pictures/hackathon1.png
-            alt="hakcathon1"
-            title="Cliquer pour accéder"
-        /></a>
+          ><img class="card-img-top" src=./pictures/hackathon1.png
+          alt="hakcathon1" title="Cliquer pour accéder" /></a
+        >
         <div class="card-body">
           <h5 class="card-title">Mon premier hackathon</h5>
           <p class="card-text">
-            Pour mon premier hackathon, j'ai réalisé ce jeu de carte. Sur une durée de 24h, moi et mon équipe avons obtenir ce résultat, alors que 1 mois auparavant nous n'avions presque jamais touché à une ligne de code.
+            Pour mon premier hackathon, j'ai réalisé ce jeu de carte. Sur une
+            durée de 24h, moi et mon équipe avons obtenir ce résultat, alors que
+            1 mois auparavant nous n'avions presque jamais touché à une ligne de
+            code.
           </p>
           <p>Cette application a été réalisé en JavaScript avec React.JS</p>
           <p class="card-text">
-            <small class="text-muted"><a href="https://nervous-minsky-7b53b9.netlify.com/" target="_blank"
-              >Accéder au site</a></small>
+            <small class="text-muted"
+              ><a
+                href="https://nervous-minsky-7b53b9.netlify.com/"
+                target="_blank"
+                >Accéder au site</a
+              ></small
+            >
           </p>
         </div>
       </div>
@@ -100,33 +150,58 @@
         <div class="card-body">
           <h5 class="card-title">Wild Circus</h5>
           <p class="card-text">
-            Site internet réalisé afin d'être admis à la Wild Code School de Lille.
-            Ce site est codé en HTML/CSS uniquement.
+            Site internet réalisé afin d'être admis à la Wild Code School de
+            Lille. Ce site est codé en HTML/CSS uniquement.
           </p>
           <p class="card-text">
-            <small class="text-muted"><a href="https://suspicious-keller-31c447.netlify.com/" target="_blank"
-              >Accéder au site</a></small>
+            <small class="text-muted"
+              ><a
+                href="https://suspicious-keller-31c447.netlify.com/"
+                target="_blank"
+                >Accéder au site</a
+              ></small
+            >
           </p>
         </div>
       </div>
 
- 
       <footer class="page-footer font-small allFooter">
         <div class="footerContainer">
-          <div class="row text-center d-flex justify-content-center pt-5 mb-3 footer">
+          <div
+            class="row text-center d-flex justify-content-center pt-5 mb-3 footer"
+          >
             <div class="col-md-6 offset-1 py-2">
               <h6 class="text-uppercase font-weight-bold">
-                Développeur Web en formation permanente. N'hésitez pas à me contacter pour discuter de vos projets.
+                Développeur Web en formation permanente. N'hésitez pas à me
+                contacter pour discuter de vos projets.
               </h6>
             </div>
             <div class="col">
               Contact =>
-              <a href="https://github.com/Louis-Allard?tab=repositories" target="_blank"><img src="pictures/github.ico"
-                  alt="mon github" title="Mon GitHub" /></a>
-              <a href="https://www.linkedin.com/in/louis-allard-devweb/" target="_blank"><img class="likedin"
-                  src="./pictures/likedin.png" alt="mon LikedIn" title="Mon LinkeDin" /></a>
-              <a href="mailto:la.devweb@yahoo.com" target="_blank"><img class="contact" src="./pictures/contact.png"
-                  alt="mon Email" title="Email" /></a>
+              <a
+                href="https://github.com/Louis-Allard?tab=repositories"
+                target="_blank"
+                ><img
+                  src="pictures/github.ico"
+                  alt="mon github"
+                  title="Mon GitHub"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/louis-allard-devweb/"
+                target="_blank"
+                ><img
+                  class="likedin"
+                  src="./pictures/likedin.png"
+                  alt="mon LikedIn"
+                  title="Mon LinkeDin"
+              /></a>
+              <a href="mailto:la.devweb@yahoo.com" target="_blank"
+                ><img
+                  class="contact"
+                  src="./pictures/contact.png"
+                  alt="mon Email"
+                  title="Email"
+              /></a>
             </div>
           </div>
           <hr class="rgba-white-light" style="margin: 0 10%;" />
