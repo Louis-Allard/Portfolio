@@ -105,7 +105,7 @@ body {
 }
 
 .introduction {
-  margin-top:25px;
+  margin-top: 25px;
 }
 
 /* Page Blog */
@@ -126,6 +126,12 @@ div .card-body {
 }
 /* Page C.V 
 -------------------------------------*/
+.titre {
+  height: 50px;
+  font-size: 1.7rem;
+  color: yellowgreen;
+}
+
 .langages {
   margin: 0 auto;
   width: 40%;
@@ -143,7 +149,10 @@ div .card-body {
   opacity: 0.5;
 }
 .contactIntro {
-  padding-top: 10rem;
+  padding-top: 0rem;
+}
+.contactIntro ul {
+  padding-top: 5rem;
 }
 .categories {
   margin-top: 2.5rem;
@@ -236,6 +245,10 @@ body.openNav {
     font-size: 0.8rem;
   }
   .contactIntro {
+    padding-top: 0rem;
+  }
+
+  .contactIntro ul {
     padding-top: 5rem;
   }
 }
