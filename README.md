@@ -3,3 +3,4 @@
 
 CV en ligne : https://louis-allard.github.io/Portfolio/
 
+Nouveau site en cours. Voir repo Portfolio-vuejs
